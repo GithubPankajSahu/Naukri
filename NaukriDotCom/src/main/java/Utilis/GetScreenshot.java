@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.FileHandler;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -23,7 +22,7 @@ public class GetScreenshot {
 			
 			String timeStamp = dateFormat.format(new Date());
 			
-			String destinationPath = "E:\\Screenshot"+testID+ timeStamp + ".png";
+			String destinationPath = "test-output\\Screenshots"+testID+ ","+ timeStamp + ".png";
 			
 			
 			TakesScreenshot ts = (TakesScreenshot)driver;

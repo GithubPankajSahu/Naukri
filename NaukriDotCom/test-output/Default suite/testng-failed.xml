@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.VerifyMainPageButtons">
+      <class name="TestNG.VerifySearchButtonOfMainPage">
         <methods>
-          <include name="verifyLogInButton"/>
-          <include name="verifyRegisterButton"/>
-          <include name="verifyForEmployerDropDown"/>
-          <include name="closeTheBrowser"/>
           <include name="launchBrowser"/>
+          <include name="closeTheBrowser"/>
+          <include name="takeScreenshotOffailedTest"/>
+          <include name="removeObjects"/>
+          <include name="verifySearchButton"/>
+          <include name="createObjects"/>
+          <include name="goOnSearchButton"/>
         </methods>
-      </class> <!-- TestNG.VerifyMainPageButtons -->
+      </class> <!-- TestNG.VerifySearchButtonOfMainPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

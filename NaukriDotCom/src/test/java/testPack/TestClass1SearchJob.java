@@ -26,7 +26,7 @@ public class TestClass1SearchJob {
 		HomePage homePage = new HomePage(driver);
 		homePage.sendSkillsDesignationCompanies("Automation Engineer");
 		homePage.selectExperience();
-		homePage.sendLocation("Noida", "Indore", "Gurugram");
+		homePage.sendLocation("Noida");
 		homePage.clickSearchButton();
 		
 		GetScreenshot.getScheenShot("testID");

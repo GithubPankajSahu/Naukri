@@ -1,4 +1,4 @@
-package pages;
+ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -72,8 +72,8 @@ public class HomePage {
 		
 	}
 	
-	public void sendLocation(String enterCityName1, String cityName2, String cityName3) {
-		enterLoation.sendKeys(enterCityName1, cityName2, cityName3);
+	public void sendLocation(String enterCityName1) {
+		enterLoation.sendKeys(enterCityName1);
 	}
 	
 	public void clickSearchButton() {
